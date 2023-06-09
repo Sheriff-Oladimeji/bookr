@@ -54,7 +54,7 @@ const Navbar = () => {
             </span>
           </div>
 
-          <ul className="flex flex-col space-y-8 font-semibold mt-8">
+          <ul className="flex flex-col space-y-8 font-semibold mt-8 text-xl">
             <li>Home</li>
             <li>Rooms</li>
             <li>Contact</li>
