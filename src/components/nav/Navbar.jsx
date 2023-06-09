@@ -7,7 +7,12 @@ const Navbar = () => {
           <div>
             <span>HolidayHaven</span>
           </div>
-          <ul className="flex"></ul>
+                <ul className="flex space-x-6 text-brown font-semibold">
+                    <li>Home</li>
+                    <li>Rooms</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+          </ul>
         </div>
       </nav>
     );
