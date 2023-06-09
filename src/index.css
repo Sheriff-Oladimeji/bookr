@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  li{
+    @apply text-dark hover:text-brown  cursor-pointer;
+  }
+}
