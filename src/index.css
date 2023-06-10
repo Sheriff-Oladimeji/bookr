@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+      scroll-behavior: smooth;
+    }
   li{
     @apply text-dark hover:text-brown  cursor-pointer;
   }
