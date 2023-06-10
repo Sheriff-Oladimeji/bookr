@@ -54,26 +54,32 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "md:hidden w-[50%] h-screen bg-[#FAFAFA] top-0 left-0 fixed z-10 duration-500 px-8 py-8"
+            ? "md:hidden w-[60%] h-screen bg-[#FAFAFA] top-0 left-0 fixed z-10 duration-500 px-8 py-8"
             : "md:hidden w-[50px] h-screen bg-white top-0 left-[-100%] fixed z-10 duration-500"
         }
       >
         <div>
           <span className="font-bold text-dark text-2xl font-mont">Bookr</span>
         </div>
-
+        {/* mobile menu */}
         <ul className="flex flex-col space-y-8 font-semibold mt-8 text-xl">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={handleNav}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/rooms">Rooms</Link>
+            <Link to="/rooms" onClick={handleNav}>
+              Rooms
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={handleNav}>
+              Contact
+            </Link>
           </li>
           <li>
-            <Link>Services</Link>
+            <Link onClick={handleNav}>Services</Link>
           </li>
         </ul>
       </div>

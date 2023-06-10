@@ -75,7 +75,7 @@ const Header = () => {
               className="flex items-center gap-2 justify-center"
             >
               <GiPerson size={25} />
-              {`${options.adult} adult • ${options.children} children • ${options.room} room `}
+              {`${options.adult} adult - ${options.children} children - ${options.room} room `}
             </span>
             {openOptions && (
               <div
