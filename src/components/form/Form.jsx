@@ -12,8 +12,7 @@ export default function Form() {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="mt-10 w-[90%] md:w-[50%] mx-auto flex flex-col space-y-6 mb-8"
-          action="https://getform.io/f/a2ecc236-ac1c-45ba-a55a-866ec1772a84"
-          method="POST"
+        
     >
       <div className="flex items-center gap-4 flex-col md:flex-row w-full mt-0">
         <div className="w-full flex-col h-[56px] mb-4">
