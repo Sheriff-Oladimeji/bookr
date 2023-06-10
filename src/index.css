@@ -21,7 +21,9 @@
 .optionCounterButton {
   @apply w-[30px] h-[30px] border text-[#0071c2] cursor-pointer bg-[white] border-solid border-[#0071c2] disabled:cursor-not-allowed;
 }
-
+.input{
+  @apply bg-[#F2F2F2] outline-none border-none p-3 w-full rounded-md placeholder:p-4 mb-2;
+}
 .header{
   background: url("./assets/header.png") no-repeat center center;
   background-size: cover;
