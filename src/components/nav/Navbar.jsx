@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
 
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleNav = () => {
@@ -16,10 +16,10 @@ const Navbar = () => {
             </span>
           </div>
           <ul className="hidden md:flex space-x-12 font-semibold items-center text-lg">
-            <li>Home</li>
-            <li>Rooms</li>
-            <li>Contact</li>
-            <li>Services</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rooms">Rooms</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link>Services</Link></li>
           </ul>
 
           <div className="flex gap-6 items-center">
