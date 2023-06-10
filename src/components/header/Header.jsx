@@ -48,7 +48,7 @@ const Header = () => {
           Welcome To The Place Where Luxury Meets Affordability
         </h1>
         <div className="h-[100px] flex flex-col gap-6 md:flex-row items-center justify-around  mt-[100px] w-full  px-0 py-4 rounded-[5px] relative">
-          <div className="box w-[350px] left-0">
+          <div className="box w-[%] md:w-[30%]">
             <span
               className="flex items-center gap-2 justify-center"
               onClick={handleDateClick}
@@ -65,17 +65,23 @@ const Header = () => {
                 onChange={(item) => setDate([item.selection])}
                 moveRangeOnFirstSelection={false}
                 ranges={date}
-                className="shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]"
+                className="absolute top-[20px] md:top-[80px] left-0 mx-auto z-10 rounded-lg md:left-10"
               />
             )}
           </div>
           <div className="box">
-            <span onClick={handleOptionsClick}>
-              {`${options.adult} adult • ${options.children} children • ${options.room} room `}
+            <span
+              onClick={handleOptionsClick}
+              className="flex items-center gap-2 justify-center"
+            >
               <GiPerson size={25} />
+              {`${options.adult} adult • ${options.children} children • ${options.room} room `}
             </span>
             {openOptions && (
-              <div className="options" onClick={(e) => e.stopPropagation()}>
+              <div
+                className="absolute bg-[white] text-[gray] shadow-[0px_0px_10px_-15px_rgba(0,0,0,0.4)] rounded-[5px] top-[80px] "
+                onClick={(e) => e.stopPropagation()}
+              >
                 <div className="optionItem">
                   <span className="optionText">Adult</span>
                   <div className="optionCounter">
@@ -138,8 +144,10 @@ const Header = () => {
               </div>
             )}
           </div>
-         
-          <button>Check Availability</button>
+
+          <button className="bg-brown p-4 font-bold font-lato text-xl rounded-lg w-full md:w-[20%]">
+            Check Availability
+          </button>
         </div>
       </div>
     </header>
