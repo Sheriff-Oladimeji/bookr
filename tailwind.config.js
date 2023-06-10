@@ -6,6 +6,7 @@ export default {
       brown: "#B55B02",
       gray: "#8FCFFF",
       dark: "#333333",
+      white: "#FFFFFF"
     },
     fontFamily: {
       lato: ["Lato", 'sans-serif'],

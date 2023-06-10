@@ -8,7 +8,7 @@ const Navbar = () => {
         setNav(!nav)
     }
     return (
-      <nav className="w-full bg-[#FAFAFA] font-lato ">
+      <nav className="w-full bg-[#FAFAFA] font-lato">
         <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
           <div>
             <span className="font-bold text-dark text-2xl font-mont">
