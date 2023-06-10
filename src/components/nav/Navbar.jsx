@@ -15,7 +15,7 @@ const Navbar = () => {
               Bookr
             </span>
           </div>
-          <ul className="hidden md:flex space-x-12 font-semibold items-center">
+          <ul className="hidden md:flex space-x-12 font-semibold items-center text-lg">
             <li>Home</li>
             <li>Rooms</li>
             <li>Contact</li>

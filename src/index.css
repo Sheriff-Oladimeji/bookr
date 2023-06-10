@@ -9,9 +9,10 @@
     @apply text-dark hover:text-brown  cursor-pointer;
   }
 }
-.box{
+.box {
   @apply bg-white cursor-pointer text-dark flex-col items-center justify-center p-4 text-center;
 }
+
 .header{
   background: url("./assets/header.png") no-repeat center center;
   background-size: cover;
