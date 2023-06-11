@@ -65,7 +65,7 @@ const Navbar = () => {
           <span className="font-bold text-dark text-2xl font-mont">Bookr</span>
         </div>
         {/* mobile menu */}
-        <ul className="flex flex-col space-y-8 font-semibold mt-8 text-xl">
+        <ul className="flex flex-col space-y-12 font-semibold mt-12 text-xl">
           <li>
             <Link to="/" onClick={handleNav}>
               Home
