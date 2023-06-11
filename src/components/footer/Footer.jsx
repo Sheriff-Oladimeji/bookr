@@ -13,6 +13,10 @@ const Footer = () => {
             <BsInstagram size={20} className="hover:text-dark" />
           </div>
         </div>
+        <div>
+                  <span className="font-bold text-2xl font-mont">CONTACT</span>
+                  <p></p>
+        </div>
       </div>
     </footer>
   );
