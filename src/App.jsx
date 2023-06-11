@@ -1,4 +1,9 @@
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from "react-router-dom";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 import Home from "./Pages/home/Home";
 import Rooms from "./Pages/rooms/Rooms";
 import Contact from "./Pages/contact/Contact";
@@ -8,16 +13,14 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />}/>
+        <Route index element={<Home />} />
         <Route path="contact" element={<Contact />} />
         <Route path="rooms" element={<Rooms />} />
-        <Route path="*" element={<NotFound/>} />
-         </Route>
+        <Route path="*" element={<NotFound />} />
+      </Route>
     )
   );
-  return (
-   <RouterProvider router={router}/>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
