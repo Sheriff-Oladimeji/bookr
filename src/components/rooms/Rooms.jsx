@@ -1,4 +1,4 @@
-
+import {BsPeople} from "react-icons/bs"
 import rooms from "../../data/rooms.json"
 const Rooms = () => {
   return (
@@ -19,10 +19,11 @@ const Rooms = () => {
               <h2 className="text-2xl md:text-xl font-bold text-dark">
                 {room.name}
               </h2>
-              <span>
+                    <span className="flex text-lg items-center gap-3 text-gray-600">
+                        <BsPeople/>
                 {room.guests}adult(s)and {room.children}child(ren)
               </span>
-              <button className="border-2 border-brown p-2 w-[80%] rounded-lg hover:bg-brown text-brown font-semibold hover:text-white">
+              <button className="border-2 border-brown p-2  w-[60%] md:w-[80%]  rounded-lg hover:bg-brown text-brown font-semibold hover:text-white">
                 Book now {room.price}
               </button>
             </div>
