@@ -1,27 +1,30 @@
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/home/Home";
-
 import Contact from "./Pages/contact/Contact";
-import RootLayout from "./layout/RootLayout";
 import NotFound from "./Pages/404/NotFound";
 import Gallery from "./Pages/gallery/Gallery";
+import Navbar from "./components/nav/Navbar";
+import Room from "./routes/Room";
+import Footer from "./components/footer/Footer";
+
 const App = () => {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="gallery" element={<Gallery/>} />
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+
+        <Route path="/room" element={<Room />}>
+          <Route path=":roomId" element={<Room />} />
+        </Route>
+
         <Route path="*" element={<NotFound />} />
-      </Route>
-    )
+          </Routes>
+          <Footer/>
+    </Router>
   );
-  return <RouterProvider router={router} />;
 };
 
 export default App;

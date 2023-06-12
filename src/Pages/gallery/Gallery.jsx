@@ -1,5 +1,5 @@
 
-import Footer from "../../components/footer/Footer";
+
 import GalleryHeader from "../../components/header/GalleryHeader"
 import images from  "../../data/gallery.json"
 
@@ -19,7 +19,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-      <Footer />
+     
     </section>
   );
 }
