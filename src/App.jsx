@@ -16,13 +16,11 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
 
-        <Route path="/room" element={<Room />}>
-          <Route path=":roomId" element={<Room />} />
-        </Route>
+        <Route path="/room/:roomId" element={<Room/>} />
 
         <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer/>
+      </Routes>
+      <Footer />
     </Router>
   );
 };

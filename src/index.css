@@ -27,6 +27,9 @@
 .input{
   @apply bg-[#F2F2F2] outline-none border-none p-3 w-full rounded-md placeholder:p-4 mb-2;
 }
+.table{
+  @apply flex justify-between border-b-2 pb-2;
+}
 .header{
   background: url("./assets/header.png") no-repeat center center;
   background-size: cover;

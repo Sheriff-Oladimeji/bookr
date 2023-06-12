@@ -1,7 +1,7 @@
-import {BsPeople} from "react-icons/bs"
-import rooms from "../../data/rooms.json"
-import Room from "../../routes/Room";
+import { BsPeople } from "react-icons/bs";
+import rooms from "../../data/rooms.json";
 import { Link } from "react-router-dom";
+
 const Rooms = () => {
   return (
     <main className="mb-20 mt-36 font-mont">
@@ -25,18 +25,20 @@ const Rooms = () => {
               </h2>
               <span className="flex text-lg items-center gap-3 text-gray-600">
                 <BsPeople />
-                {room.guests}adult(s)
+                {room.guests} adult(s)
                 {room.children && ` and ${room.children} child(ren)`}
               </span>
-              <button className="border-2 border-brown p-2  w-[60%] md:w-[80%]  rounded-lg hover:bg-brown text-brown font-semibold hover:text-white">
-                <Link to={`/room/${rooms.id}`} element={<Room/>}> Book now {room.price}</Link>
-              </button>
+              <Link to={`/room/${room.id}`}>
+                <button className="border-2 border-brown p-2 w-[60%] md:w-[80%] rounded-lg hover:bg-brown text-brown font-semibold hover:text-white">
+                  Book now {room.price}
+                </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
     </main>
   );
-}
+};
 
-export default Rooms
+export default Rooms;
