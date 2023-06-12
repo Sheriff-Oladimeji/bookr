@@ -30,9 +30,7 @@ const Navbar = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          <li>
-            <Link>Services</Link>
-          </li>
+         
         </ul>
 
         <div className="flex gap-6 items-center">
@@ -81,9 +79,7 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          <li>
-            <Link onClick={handleNav}>Services</Link>
-          </li>
+        
         </ul>
       </div>
     </nav>
