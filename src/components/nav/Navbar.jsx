@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50">
       <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
         <div>
-          <span className="font-bold text-dark text-2xl font-mont">Bookr</span>
+          <a  href="/" className="font-bold text-dark text-2xl font-mont">Bookr</a>
         </div>
         <ul className="hidden md:flex space-x-12 font-semibold items-center text-lg">
           <li>
@@ -60,7 +60,7 @@ const Navbar = () => {
         }
       >
         <div>
-          <span className="font-bold text-dark text-2xl font-mont">Bookr</span>
+          <a  href="/"  className="font-bold text-dark text-2xl font-mont">Bookr</a>
         </div>
         {/* mobile menu */}
         <ul className="flex flex-col space-y-12 font-semibold mt-12 text-xl">
