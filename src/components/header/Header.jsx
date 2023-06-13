@@ -15,18 +15,18 @@ const Header = () => {
     },
   ]);
   const [openDate, setOpenDate] = useState(false);
-  const [options, setOptions] = useState({
+  const [guests, setGuests] = useState({
     adult: 1,
     children: 2,
     room: 1,
   });
-  const [openOptions, setOpenOptions] = useState(false);
+  const [openGuests, setOpenGuests] = useState(false);
 
-  const handleOption = (name, operation) => {
-    setOptions((prev) => {
+  const handleGuest = (name, operation) => {
+    setGuests((prev) => {
       return {
         ...prev,
-        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+        [name]: operation === "i" ? guests[name] + 1 : guests[name] - 1,
       };
     });
   };
@@ -36,15 +36,15 @@ const Header = () => {
     setOpenDate(!openDate);
   };
 
-  const handleOptionsClick = (e) => {
+  const handleGuestsClick = (e) => {
     e.stopPropagation();
-    setOpenOptions(!openOptions);
+    setOpenGuests(!openGuests);
   };
 
   return (
     <header className="header font-lato">
       <div className="flex flex-col justify-center items-center pt-32  w-[90%] mx-auto">
-        <h1 className="text-3xl  sm:text-4xl md:text-5xl mx-auto text-center">
+        <h1 className="text-3xl  sm:text-4xl md:text-5xl mx-auto text-center mt-6">
           Welcome To The Place Where Luxury Meets Affordability
         </h1>
         <div className="h-[100px] flex flex-col gap-6 md:flex-row items-center justify-around  mt-[100px] w-full  px-0 py-4 rounded-[5px] relative">
@@ -71,71 +71,71 @@ const Header = () => {
           </div>
           <div className="box">
             <span
-              onClick={handleOptionsClick}
+              onClick={handleGuestsClick}
               className="flex items-center gap-2 justify-center"
             >
               <GiPerson size={25} />
-              {`${options.adult} adult - ${options.children} children - ${options.room} room `}
+              {`${guests.adult} adult - ${guests.children} children - ${guests.room} room `}
             </span>
-            {openOptions && (
+            {openGuests && (
               <div
                 className="absolute bg-[white] text-[gray] shadow-[0px_0px_10px_-15px_rgba(0,0,0,0.4)] rounded-[5px] top-[80px] "
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="optionItem">
-                  <span className="optionText">Adult</span>
-                  <div className="optionCounter">
+                <div className="guestItem">
+                  <span className="guestText">Adult</span>
+                  <div className="guestCounter">
                     <button
-                      disabled={options.adult <= 1}
-                      className="optionCounterButton"
-                      onClick={() => handleOption("adult", "d")}
+                      disabled={guests.adult <= 1}
+                      className="guestCounterButton"
+                      onClick={() => handleGuest("adult", "d")}
                     >
                       -
                     </button>
-                    <span className="optionCounterNumber">{options.adult}</span>
+                    <span className="guestCounterNumber">{guests.adult}</span>
                     <button
-                      className="optionCounterButton"
-                      onClick={() => handleOption("adult", "i")}
+                      className="guestCounterButton"
+                      onClick={() => handleGuest("adult", "i")}
                     >
                       +
                     </button>
                   </div>
                 </div>
-                <div className="optionItem">
-                  <span className="optionText">Children</span>
-                  <div className="optionCounter">
+                <div className="guestItem">
+                  <span className="guestText">Children</span>
+                  <div className="guestCounter">
                     <button
-                      disabled={options.children <= 1}
-                      className="optionCounterButton"
-                      onClick={() => handleOption("children", "d")}
+                      disabled={guests.children <= 1}
+                      className="guestCounterButton"
+                      onClick={() => handleGuest("children", "d")}
                     >
                       -
                     </button>
-                    <span className="optionCounterNumber">
-                      {options.children}
+                    <span className="guestCounterNumber">
+                      {guests.children}
                     </span>
                     <button
-                      className="optionCounterButton"
-                      onClick={() => handleOption("children", "i")}
+                      className="guestCounterButton"
+                      onClick={() => handleGuest("children", "i")}
                     >
                       +
                     </button>
                   </div>
                 </div>
-                <div className="optionItem">
-                  <span className="optionText">Room</span>
-                  <div className="optionCounter">
+                <div className="guestItem">
+                  <span className="guestText">Room</span>
+                  <div className="guestCounter">
                     <button
-                      disabled={options.room <= 1}
-                      className="optionCounterButton"
-                      onClick={() => handleOption("room", "d")}
+                      disabled={guests.room <= 1}
+                      className="guestCounterButton"
+                      onClick={() => handleGuest("room", "d")}
                     >
                       -
                     </button>
-                    <span className="optionCounterNumber">{options.room} </span>
+                    <span className="guestCounterNumber">{guests.room} </span>
                     <button
-                      className="optionCounterButton"
-                      onClick={() => handleOption("room", "i")}
+                      className="guestCounterButton"
+                      onClick={() => handleGuest("room", "i")}
                     >
                       +
                     </button>

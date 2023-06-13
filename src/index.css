@@ -15,13 +15,13 @@
 .box {
   @apply bg-white cursor-pointer text-dark flex-col items-center justify-center p-4 text-center w-[100%] md:w-[30%] rounded-lg;
 }
-.optionItem {
+.guestItem {
   @apply w-[200px] flex justify-between m-2.5;
 }
-.optionCounter {
+.guestCounter {
   @apply flex items-center gap-2.5 text-xs text-[black];
 }
-.optionCounterButton {
+.guestCounterButton {
   @apply w-[30px] h-[30px] border text-[#0071c2] cursor-pointer bg-[white] border-solid border-[#0071c2] disabled:cursor-not-allowed;
 }
 .input{
