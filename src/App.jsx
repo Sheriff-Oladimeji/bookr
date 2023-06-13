@@ -6,6 +6,7 @@ import Gallery from "./Pages/gallery/Gallery";
 import Navbar from "./components/nav/Navbar";
 import Room from "./routes/Room";
 import Footer from "./components/footer/Footer";
+import Cart from "./Pages/cart/Cart";
 
 const App = () => {
   return (
@@ -16,8 +17,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
 
-        <Route path="/room/:roomId" element={<Room/>} />
-
+        <Route path="/room/:roomId" element={<Room />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

@@ -18,7 +18,9 @@ const Navbar = () => {
     <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50">
       <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
         <div>
-          <a  href="/" className="font-bold text-dark text-2xl font-mont">Bookr</a>
+          <a href="/" className="font-bold text-dark text-2xl font-mont">
+            Bookr
+          </a>
         </div>
         <ul className="hidden md:flex space-x-12 font-semibold items-center text-lg">
           <li>
@@ -30,11 +32,12 @@ const Navbar = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-         
         </ul>
 
         <div className="flex gap-6 items-center">
-          <AiOutlineShoppingCart size={30} />
+          <Link to="/cart">
+            <AiOutlineShoppingCart size={30} />
+          </Link>
           <button
             onClick={handleNav}
             className="duration-500 outline-none border-none z-20 md:hidden"
@@ -60,7 +63,9 @@ const Navbar = () => {
         }
       >
         <div>
-          <a  href="/"  className="font-bold text-dark text-2xl font-mont">Bookr</a>
+          <a href="/" className="font-bold text-dark text-2xl font-mont">
+            Bookr
+          </a>
         </div>
         {/* mobile menu */}
         <ul className="flex flex-col space-y-12 font-semibold mt-12 text-xl">
@@ -71,7 +76,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/gallery" onClick={handleNav}>
-            Gallery
+              Gallery
             </Link>
           </li>
           <li>
@@ -79,7 +84,6 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-        
         </ul>
       </div>
     </nav>
