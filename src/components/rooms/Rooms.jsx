@@ -32,7 +32,7 @@ const Rooms = () => {
                 to={`/room/${room.id}`}
                 className="border-2 border-brown p-2 w-[60%] md:w-[80%] rounded-lg hover:bg-brown text-brown font-semibold hover:text-white text-center"
               >
-                Book now {room.price}
+                Book now ${room.price}
               </Link>
             </div>
           </div>
