@@ -23,13 +23,13 @@ const Cart = () => {
                 <img src={item.img} alt={item.name} className="w-[10%]" />
                 <h2>{item.name}</h2>
               </div>
-              <p>{item.price}</p>
+              <p>${item.price}</p>
               <button>Remove</button>
             </div>
           ))}
             <div className="flex gap-4 items-center">
               <p className="font-bold">Total price =</p>
-              <p>{totalPrice}</p>
+              <p>${totalPrice}</p>
             </div>
           <div className="w-[60%] md:w-[30%] mx-auto">
             <button className="border-2 border-brown p-4  rounded-lg  mt-8 bg-brown font-semibold text-white text-center mb-4 w-full">
