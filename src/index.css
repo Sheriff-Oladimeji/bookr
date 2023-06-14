@@ -11,6 +11,11 @@
   li{
     @apply text-dark hover:text-brown  cursor-pointer;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 .box {
   @apply bg-white cursor-pointer text-dark flex-col items-center justify-center p-4 text-center w-[100%] md:w-[30%] rounded-lg;
