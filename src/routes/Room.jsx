@@ -37,6 +37,7 @@ const Room = () => {
     selectedRoom;
     const handleAddToCart = () => {
       dispatch(addToCart({name, id, price, img}));
+      alert("Item added to cart")
     };
 
   return (
