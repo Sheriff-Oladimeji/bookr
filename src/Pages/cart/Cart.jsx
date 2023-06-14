@@ -30,10 +30,12 @@ const Cart = () => {
                 <img src={item.img} alt={item.name} className="w-[10%]" />
                 <h2 className="font-bold">{item.name}</h2>
               </div>
+              <div  className="flex gap-4 items-center ">
               <p>${item.price}</p>
               <button onClick={() => handleRemoveFromCart(item.id)}>
                 <AiOutlineDelete size={25} />
               </button>
+              </div>
             </div>
           ))}
           <div className="flex gap-4 items-center mt-4">
