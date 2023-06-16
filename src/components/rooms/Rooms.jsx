@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Rooms = () => {
   return (
-    <main className="mb-20 mt-36 font-mont">
+    <main className="mb-20 mt-36 font-mont" id="rooms">
       <h1 className="text-4xl text-dark md:text-6xl text-center mb-12">
         Our Rooms
       </h1>
