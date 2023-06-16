@@ -146,7 +146,7 @@ const Header = () => {
           </div>
 
           <button className="bg-brown p-4 font-bold font-lato text-xl rounded-lg w-full md:w-[20%]">
-            Check Availability
+            <a className="text-white" href="#rooms">Check Availability</a>
           </button>
         </div>
       </div>
