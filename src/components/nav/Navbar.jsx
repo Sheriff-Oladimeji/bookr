@@ -84,6 +84,11 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="/cart" onClick={handleNav}>
+            Cart
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
