@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header className="header font-lato">
       <div className="flex flex-col justify-center items-center pt-32  w-[90%] mx-auto">
-        <h1 className="text-3xl  sm:text-4xl md:text-5xl mx-auto text-center mt-6">
+        <h1 className="text-3xl  sm:text-4xl md:text-5xl mx-auto text-center mt-12 font-mont">
           Welcome To The Place Where Luxury Meets Affordability
         </h1>
         <div className="h-[100px] flex flex-col gap-6 md:flex-row items-center justify-around  mt-[100px] w-full  px-0 py-4 rounded-[5px] relative">
