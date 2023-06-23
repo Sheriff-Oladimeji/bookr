@@ -105,7 +105,7 @@ const Room = () => {
             </div>
             <div className="flex justify-center items-center outline outline-white w-[80%] mx-auto outline-1 h-16 mt-10">
               <h2 className="text-3xl text-white font-bold">
-                ${price}{" "}
+                ${price}
                 <span className="text-lg uppercase font-normal font-lato">
                   / per night
                 </span>

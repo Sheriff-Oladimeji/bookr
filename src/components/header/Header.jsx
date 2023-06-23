@@ -65,7 +65,7 @@ const Header = () => {
                 onChange={(item) => setDate([item.selection])}
                 moveRangeOnFirstSelection={false}
                 ranges={date}
-                className="absolute top-[20px] md:top-[80px] left-0 mx-auto z-10 rounded-lg md:left-10"
+                className="absolute top-[20px] md:top-[80px] left-0 mx-auto z-10 rounded-lg md:left-10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
               />
             )}
           </div>
@@ -146,7 +146,9 @@ const Header = () => {
           </div>
 
           <button className="bg-brown p-4 font-bold font-lato text-xl rounded-lg w-full md:w-[20%]">
-            <a className="text-white" href="#rooms">Check Availability</a>
+            <a className="text-white" href="#rooms">
+              Check Availability
+            </a>
           </button>
         </div>
       </div>
