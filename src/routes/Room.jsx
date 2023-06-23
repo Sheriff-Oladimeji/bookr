@@ -112,7 +112,7 @@ const Room = () => {
               </h2>
             </div>
             
-              <button className="border-2 border-brown p-4 w-[60%] md:w-[80%] rounded-lg  mt-8 bg-brown font-semibold text-white text-center" onClick={handleAddToCart}>
+              <button className="border-2 border-brown p-4 w-[80%] rounded-lg  mt-8 bg-brown font-semibold text-white text-center" onClick={handleAddToCart}>
                 Add to cart
               </button>
            
