@@ -24,7 +24,7 @@ const Cart = () => {
           {cartItems.map((item) => (
             <div
               key={item.id}
-              className="flex justify-between mt-12 items-center border-b"
+              className="flex justify-between mt-12 items-center border-b pb-2"
             >
               <div className="flex items-center gap-6">
                 <img src={item.img} alt={item.name} className="w-[10%]" />
