@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer className="bg-brown text-white py-8">
       <div className="w-[80%] mx-auto">
-        <div className="flex flex-col md:flex-row md:items-center justify-around w-full">
+        <main className="flex flex-col md:flex-row  md:items-start md:justify-around w-full">
           <div className="flex flex-col justify-center space-y-4 mb-12">
-            <span className="font-bold text-2xl font-mont">Bookr</span>
+            <span className="font-bold text-2xl font-lato">Bookr</span>
             <div className="flex gap-4 text-white cursor-pointer">
               <FaFacebookF size={20} className="hover:text-dark" />
               <BsTwitter size={20} className="hover:text-dark" />
@@ -31,7 +31,7 @@ const Footer = () => {
             <p className="flex items-center gap-2">123 Main Street</p>
             <p className="flex items-center gap-2">Lagos, Nigeria</p>
           </div>
-        </div>
+        </main>
         <div className="flex flex-col md:items-center md:flex-row justify-between mt-6 space-y-4 md:space-y-0">
           <ul className="flex items-center gap-6 md:gap-12 font-semibold text-white text-[17px] flex-wrap">
             <p>
