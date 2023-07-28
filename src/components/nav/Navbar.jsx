@@ -4,6 +4,7 @@ import {
   AiOutlineMenu,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
 import { Link } from "react-router-dom";
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
+const cartCount = useSelector((state) => state.cart.cartItems.length);
   return (
     <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50">
       <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
@@ -38,8 +39,11 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-6 items-center">
-          <Link to="/cart">
-            <AiOutlineShoppingCart size={30} />
+          <Link to="/cart" className="relative">
+            <AiOutlineShoppingCart size={30} className="w-full" />
+            <span className="absolute -top-2 left-4 rounded-full bg-red-500 p-0.5 px-2 text-sm text-red-50 ">
+              {cartCount}
+            </span>
           </Link>
           <button
             onClick={handleNav}
@@ -89,7 +93,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/cart" onClick={handleNav}>
-            Cart
+              Cart({cartCount})
             </Link>
           </li>
         </ul>
