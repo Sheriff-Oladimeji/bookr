@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50">
-      <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
+      <div className="flex justify-between items-center py-6 w-[90%]  mx-auto">
         <div>
           <a href="/" className="font-bold text-dark text-2xl font-mont">
             Bookr
@@ -28,6 +28,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <a href="#rooms">Rooms</a>
           </li>
           <li>
             <Link to="/contact">Contact</Link>

@@ -1,4 +1,5 @@
 
+import Facilities from "../../components/facilities/Facilities"
 import Header from "../../components/header/Header"
 import Rooms from "../../components/rooms/Rooms"
 
@@ -10,6 +11,7 @@ const Home = () => {
     
       <Header />
       <Rooms />
+      <Facilities/>
       
 </section>
   )

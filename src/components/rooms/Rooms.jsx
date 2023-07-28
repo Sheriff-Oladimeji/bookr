@@ -5,10 +5,18 @@ import { Link } from "react-router-dom";
 const Rooms = () => {
   return (
     <main className="mb-20 mt-36 font-mont" id="rooms">
-      <h1 className="text-4xl text-dark md:text-6xl text-center mb-12">
-        Our Rooms
-      </h1>
-      <div className="w-[90%] md:w-[80%] mx-auto grid md:grid-cols-3 gap-8">
+      <div className="text-center">
+        <h1 className="text-4xl text-dark md:text-6xl text-center mb-6">
+          Our Rooms
+        </h1>
+        <p className=" mb-12 max-w-2xl text-lg  mx-auto text-center">
+          Step into a room that blurs the lines between dreams and reality. A
+          wonderland of color, glamour, and comfort that expands the imagination
+          and cradles the spirit.
+        </p>
+      </div>
+
+      <div className="w-[90%]  mx-auto grid md:grid-cols-3 gap-8">
         {rooms.map((room, index) => (
           <div
             className="border shadow-lg hover:scale-105 duration-300"
