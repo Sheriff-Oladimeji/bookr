@@ -81,6 +81,7 @@ const cartCount = useSelector((state) => state.cart.cartItems.length);
               Home
             </Link>
           </li>
+          
           <li>
             <Link to="/gallery" onClick={handleNav}>
               Gallery
