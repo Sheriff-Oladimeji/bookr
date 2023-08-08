@@ -7,43 +7,54 @@ import { AiOutlineCalendar } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import rooms from "../data/rooms.json";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../features/cart"
+import { addToCart } from "../features/cart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Room = () => {
-  
- 
-    const [date, setDate] = useState([
-      {
-        startDate: new Date(),
-        endDate: new Date(),
-        key: "selection",
-      },
-    ]);
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
   const [openDate, setOpenDate] = useState(false);
-   const handleDateClick = (e) => {
-     e.stopPropagation();
-     setOpenDate(!openDate);
-   };
+  const handleDateClick = (e) => {
+    e.stopPropagation();
+    setOpenDate(!openDate);
+  };
   const { roomId } = useParams();
-  
+
   const selectedRoom = rooms.find((room) => room.id === parseInt(roomId));
- const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   if (!selectedRoom) {
     return <div>Item not found.</div>;
   }
 
-  const { name, price, img, about, guests, children, bedSize, type , id} =
+  const { name, price, img, about, guests, children, bedSize, type, id } =
     selectedRoom;
-    const handleAddToCart = () => {
-      dispatch(addToCart({name, id, price, img}));
-      alert("Item added to cart")
-    };
+  const handleAddToCart = () => {
+    dispatch(addToCart({ name, id, price, img }));
+    toast.success("Item added to cart", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
 
   return (
     <div className="mb-20 font-mont">
       <div className="w-[90%] md:w-[80%] mx-auto  mt-32">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 w-full">{name}</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 w-full">
+          {name}
+        </h1>
 
         <div className="flex flex-col md:flex-row gap-10  ">
           <div className="w-full md:w-[70%]">
@@ -111,11 +122,14 @@ const Room = () => {
                 </span>
               </h2>
             </div>
-            
-              <button className="border-2 border-brown p-4 w-[80%] rounded-lg  mt-8 bg-brown font-semibold text-white text-center" onClick={handleAddToCart}>
-                Add to cart
-              </button>
-           
+
+            <button
+              className="border-2 border-brown p-4 w-[80%] rounded-lg  mt-8 bg-brown font-semibold text-white text-center"
+              onClick={handleAddToCart}
+            >
+              Add to cart
+            </button>
+            <ToastContainer/>
           </div>
         </div>
       </div>
