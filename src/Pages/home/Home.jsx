@@ -1,4 +1,5 @@
 
+import About from "../../components/about/About"
 import Facilities from "../../components/facilities/Facilities"
 import Header from "../../components/header/Header"
 import Rooms from "../../components/rooms/Rooms"
@@ -7,14 +8,13 @@ import Rooms from "../../components/rooms/Rooms"
 
 const Home = () => {
   return (
-    <section>
-    
+    <section >
       <Header />
+      <About />
       <Rooms />
-      <Facilities/>
-      
-</section>
-  )
+      <Facilities />
+    </section>
+  );
 }
 
 export default Home

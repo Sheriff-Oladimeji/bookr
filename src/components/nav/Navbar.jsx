@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-const cartCount = useSelector((state) => state.cart.cartItems.length);
+  const cartCount = useSelector((state) => state.cart.cartItems.length);
   return (
     <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50">
       <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
@@ -81,7 +81,7 @@ const cartCount = useSelector((state) => state.cart.cartItems.length);
               Home
             </Link>
           </li>
-          
+
           <li>
             <Link to="/gallery" onClick={handleNav}>
               Gallery

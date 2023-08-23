@@ -7,13 +7,9 @@ const Rooms = () => {
     <main className="mb-20 mt-36 font-mont" id="rooms">
       <div className="text-center">
         <h1 className="text-4xl text-dark md:text-6xl text-center mb-6">
-          Our Rooms
+          Our Best Rooms
         </h1>
-        <p className=" mb-12 max-w-2xl text-lg  mx-auto text-center">
-          Step into a room that blurs the lines between dreams and reality. A
-          wonderland of color, glamour, and comfort that expands the imagination
-          and cradles the spirit.
-        </p>
+      
       </div>
 
       <div className="w-[90%]  mx-auto grid md:grid-cols-3 gap-8">

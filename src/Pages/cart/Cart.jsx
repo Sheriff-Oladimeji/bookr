@@ -1,6 +1,5 @@
-
-import { useSelector} from "react-redux";
-import { AiOutlineDelete } from "react-icons/ai"
+import { useSelector } from "react-redux";
+import { AiOutlineDelete } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { removeFromCart } from "../../features/cart";
 
@@ -8,11 +7,11 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const handleRemoveFromCart = (itemId) => {
-      dispatch(removeFromCart(itemId));
-    };
+  const handleRemoveFromCart = (itemId) => {
+    dispatch(removeFromCart(itemId));
+  };
 
   return (
     <div className="mt-12 w-[90%] md:w-[80%] mx-auto font-mont">
@@ -30,11 +29,11 @@ const Cart = () => {
                 <img src={item.img} alt={item.name} className="w-[10%]" />
                 <h2 className="font-bold">{item.name}</h2>
               </div>
-              <div  className="flex gap-4 items-center ">
-              <p>${item.price}</p>
-              <button onClick={() => handleRemoveFromCart(item.id)}>
-                <AiOutlineDelete size={25} />
-              </button>
+              <div className="flex gap-4 items-center ">
+                <p>${item.price}</p>
+                <button onClick={() => handleRemoveFromCart(item.id)}>
+                  <AiOutlineDelete size={25} />
+                </button>
               </div>
             </div>
           ))}
