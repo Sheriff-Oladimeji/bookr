@@ -2,7 +2,8 @@
 import About from "../../components/about/About"
 import Facilities from "../../components/facilities/Facilities"
 import Header from "../../components/header/Header"
-import Rooms from "../../components/rooms/Rooms"
+import BestRooms from "../../components/rooms/BestRooms"
+
 
 
 
@@ -11,7 +12,7 @@ const Home = () => {
     <section >
       <Header />
       <About />
-      <Rooms />
+      <BestRooms/>
       <Facilities />
     </section>
   );

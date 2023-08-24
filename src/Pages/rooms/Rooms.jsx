@@ -6,10 +6,9 @@ const Rooms = () => {
   return (
     <main className="mb-20 mt-36 font-mont" id="rooms">
       <div className="text-center">
-        <h1 className="text-4xl text-dark md:text-6xl text-center mb-6">
-          Our Best Rooms
+        <h1 className="text-4xl text-dark md:text-6xl text-center mb-6 cursive">
+          Our Rooms
         </h1>
-      
       </div>
 
       <div className="w-[90%]  mx-auto grid md:grid-cols-3 gap-8">
@@ -29,8 +28,7 @@ const Rooms = () => {
               </h2>
               <span className="flex text-lg items-center gap-3 text-gray-600">
                 <BsPeople />
-                {room.guests} adult(s)
-                {room.children && ` and ${room.children} child(ren)`}
+                {room.guests} Guests
               </span>
               <Link
                 to={`/room/${room.id}`}

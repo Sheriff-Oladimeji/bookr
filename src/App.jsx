@@ -8,6 +8,7 @@ import Room from "./routes/Room";
 import Footer from "./components/footer/Footer";
 import Cart from "./Pages/cart/Cart";
 import { useEffect } from "react";
+import Rooms from "./Pages/rooms/Rooms";
 
 
 function ScrollToTopOnRouteChange() {
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/rooms" element={<Rooms />} />
           <Route path="/room/:roomId" element={<Room />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />

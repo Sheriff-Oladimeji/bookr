@@ -1,40 +1,98 @@
 [
-    {
-        "id": 1,
-        "name" : "Deluxe Twin Room",
-        "price" : 30,
-        "img": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlZHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-        "about" : ["This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.","Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.", "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."],
-        "guests" : 1,
-        "children": 2,
-        "bedSize" : "1 king",
-        "type" : "Deluxe"
-
-    },
-    {
-         "id": 2,
-        "name" : "Standard Big Room",
-        "img": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVkcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "price" : 25,
-        "about" : ["This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.","Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.", "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."],
-        "guests" : 4,
-        "children": 3,
-        "bedSize" : "1 king",
-        "type" : "Standard"
-        
-
-    },
-    {
-         "id": 3,
-        "name" : "Studio Broadway Room",
-        "img": "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVkcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "price" : 50,
-        "about" : ["This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.","Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.", "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."],
-        "guests" :1,
-        "children": false,
-        "bedSize" : "1 king",
-        "type" : "Studio"
-
-
-    }
+  {
+    "id": 1,
+    "name": "Deluxe Twin Room",
+    "price": 30,
+    "img": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlZHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    "about": [
+      "This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.",
+      "Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.",
+      "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."
+    ],
+    "guests": 1,
+    "children": 2,
+    "bedSize": "1 king",
+    "type": "Deluxe",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Standard Big Room",
+    "img": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVkcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price": 25,
+    "about": [
+      "This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.",
+      "Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.",
+      "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."
+    ],
+    "guests": 4,
+    "children": 3,
+    "bedSize": "1 king",
+    "type": "Standard",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Studio Broadway Room",
+    "img": "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVkcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price": 50,
+    "about": [
+      "This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.",
+      "Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.",
+      "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."
+    ],
+    "guests": 1,
+    "children": false,
+    "bedSize": "1 king",
+    "type": "Studio",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Business Class Room",
+    "img": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+    "price": 80,
+    "about": [
+      "This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.",
+      "Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.",
+      "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."
+    ],
+    "guests": 4,
+    "children": false,
+    "bedSize": "1 king",
+    "type": "Studio",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Luxury Suite",
+    "img": "https://images.unsplash.com/photo-1512918580421-b2feee3b85a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 50,
+    "about": [
+      "This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.",
+      "Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.",
+      "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."
+    ],
+    "guests": 2,
+    "children": false,
+    "bedSize": "1 king",
+    "type": "Studio",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "The Penthouse",
+    "img": "https://images.unsplash.com/photo-1666585607888-3f6fe0b323d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fFBlbnRob3VzZSUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    "price": 200,
+    "about": [
+      "This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ walk from the historic quarter. It offers a terrace and chic, air-conditioned rooms with free Wi-Fi.",
+      "Accommodations at Hotel Room features contemporary design and central heating. All rooms include a 26-inch plasma satellite TV, a work desk and a private bathroom with hairdryer.",
+      "Breakfast is served daily and the hotel’s restaurant offers a varied, modern menu from Monday to Saturday. Several bars, restaurants and shops are within 5 minutes’ walk."
+    ],
+    "guests": 6,
+    "children": false,
+    "bedSize": "1 king",
+    "type": "Studio",
+    "featured": false
+  }
 ]

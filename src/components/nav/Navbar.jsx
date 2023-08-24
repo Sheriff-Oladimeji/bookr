@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link to="/gallery">Gallery</Link>
           </li>
           <li>
-            <a href="#rooms">Rooms</a>
+            <Link to="/rooms">Rooms</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
@@ -79,6 +79,11 @@ const Navbar = () => {
           <li>
             <Link to="/" onClick={handleNav}>
               Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/rooms" onClick={handleNav}>
+              Rooms
             </Link>
           </li>
 
