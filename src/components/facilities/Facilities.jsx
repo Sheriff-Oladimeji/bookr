@@ -4,13 +4,10 @@ const Facilities = () => {
   return (
     <section className="w-[90%] my-20 font-mont mx-auto">
       <div className="text-center mb-12">
-        <h1 className="text-4xl sm:text-5xl mb-3">
-          Visit Our Famous Facilities
+        <h1 className="text-4xl sm:text-5xl mb-3 cursive">
+         Our  Facilities
         </h1>
-        <p className="max-w-xl mx-auto text-lg">
-          A wonderful serenity has taken possession of my entire soul, like
-          these sweet mornings of spring which I enjoy with my whole heart.
-        </p>
+        
       </div>
       <main>
         {data.map((data) => (

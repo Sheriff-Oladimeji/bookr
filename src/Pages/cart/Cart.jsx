@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { AiOutlineDelete } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { removeFromCart } from "../../features/cart";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
@@ -17,7 +18,12 @@ const Cart = () => {
     <div className="mt-12 w-[90%] md:w-[80%] mx-auto font-mont">
       <h1>Cart Page</h1>
       {cartItems.length === 0 ? (
-        <p className="py-8 text-3xl">Your cart is empty.</p>
+        <div className="py-8 mt-8 text-4xl flex flex-col justify-center gap-8 items-center">
+          <p className=" text-4xl  ">Your cart is empty.</p>
+          <Link to="/rooms" className="border-2 border-brown p-4  rounded-lg  mt-8 bg-brown  text-white text-center mb-4  font-lato  ">
+           Book  a Room
+          </Link>
+        </div>
       ) : (
         <>
           {cartItems.map((item) => (

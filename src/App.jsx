@@ -18,7 +18,7 @@ function ScrollToTopOnRouteChange() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  return null; // This component doesn't render anything; it just handles scrolling
+  return null; 
 }
 
 const App = () => {
