@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "testimony": "My stay at this hotel was amazing! The staff was incredibly friendly and helpful, and the rooms were spacious and comfortable. I would definitely recommend this hotel to anyone visiting the area.",
+    "image": "https://images.unsplash.com/photo-1625504615927-c14f4f309b63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 2,
+    "name": "Emily Johnson",
+    "testimony": "I had a wonderful experience at this hotel. The location is perfect, close to all the attractions. The rooms are beautifully designed and the service is top-notch. I can't wait to come back!",
+    "image": "https://images.unsplash.com/photo-1611432579699-484f7990b127?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHNob3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 3,
+    "name": "Michael Williams",
+    "testimony": "I was thoroughly impressed by the level of service at this hotel. The staff went above and beyond to make my stay enjoyable. The amenities were fantastic, and the views from the room were breathtaking.",
+    "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHNob3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 4,
+    "name": "Sophia Brown",
+    "testimony": "Staying at this hotel made my trip unforgettable. The attention to detail in the rooms and throughout the property is remarkable. I felt pampered and relaxed during my entire stay.",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGVhZHNob3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 5,
+    "name": "William Davis",
+    "testimony": "I can't say enough good things about this hotel. The ambiance is elegant, the food is delicious, and the staff is incredibly courteous. This will be my go-to hotel whenever I'm in town.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Miller",
+    "testimony": "From the moment I arrived, I knew I was in for a treat. The hotel's decor is stunning, and the rooms are like a home away from home. I had a fantastic time exploring the city and coming back to such a comfortable space.",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+  }
+]
