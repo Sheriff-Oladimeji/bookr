@@ -5,6 +5,7 @@ import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [date, setDate] = useState([
@@ -146,9 +147,9 @@ const Header = () => {
           </div>
 
           <button className="bg-brown p-4 font-bold font-lato text-xl rounded-lg w-full md:w-[20%]">
-            <a className="text-white" href="#rooms">
+            <Link className="text-white" to="/rooms">
               Check Availability
-            </a>
+            </Link>
           </button>
         </div>
       </div>
