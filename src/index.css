@@ -41,7 +41,7 @@
 .header{
   background: url("./assets/header.png") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height:100vh;
   width: 100%;
   color: white;
   

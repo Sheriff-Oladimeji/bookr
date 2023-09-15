@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   const cartCount = useSelector((state) => state.cart.cartItems.length);
   return (
-    <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50">
+    <nav className="w-full bg-[#FAFAFA] font-lato fixed top-0 left-0 z-50 h-[80px]">
       <div className="flex justify-between items-center py-6 w-[90%] md:w-[80%] mx-auto">
         <div>
           <a href="/" className="font-bold text-dark text-2xl font-mont">
