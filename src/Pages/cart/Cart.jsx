@@ -28,7 +28,7 @@ const Cart = () => {
           <p className=" text-4xl  ">Your cart is empty.</p>
           <Link
             to="/rooms"
-            className="border-2 border-brown p-2  rounded-lg  mt-8 bg-brown  text-white text-center mb-4  font-lato  "
+            className="border-2 border-brown p-2  rounded-lg  mt-4 bg-brown text-lg  text-white text-center mb-4  font-lato  "
           >
             Book a Room
           </Link>
