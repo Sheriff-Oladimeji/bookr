@@ -58,7 +58,7 @@ const Cart = () => {
               </div>
             ))}
           </div>
-          <div className="bg-[#18191B]  w-full md:w-[35%] max-w-[500px] text-center relative py-8 rounded-md flex flex-col   gap-4 text-white">
+          <div className="bg-[#18191B]  h-[200px] w-full md:w-[35%] max-w-[500px] text-center relative py-8 rounded-md flex flex-col   gap-4 text-white">
             <h3 className="font-semibold text-xl text-white">Cart Summary</h3>
 
             <div className="w-[90%] mx-auto text-gray-200">
