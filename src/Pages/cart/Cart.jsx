@@ -8,6 +8,12 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+  const formattedPrice = totalPrice.toLocaleString("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (itemId) => {
@@ -22,14 +28,14 @@ const Cart = () => {
           <p className=" text-4xl  ">Your cart is empty.</p>
           <Link
             to="/rooms"
-            className="border-2 border-brown p-4  rounded-lg  mt-8 bg-brown  text-white text-center mb-4  font-lato  "
+            className="border-2 border-brown p-2  rounded-lg  mt-8 bg-brown  text-white text-center mb-4  font-lato  "
           >
             Book a Room
           </Link>
         </div>
       ) : (
-        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
-          <div>
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 py-8">
+          <div className="w-full md:w-[70%]">
             {cartItems.map((item) => (
               <div
                 key={item.id}
@@ -51,16 +57,20 @@ const Cart = () => {
                 </div>
               </div>
             ))}
-            <div className="flex gap-4 items-center mt-4">
-              <p className="font-bold">Total price =</p>
-              <p>${totalPrice}</p>
-            </div>
           </div>
-          <div className="bg-[#18191B] h-[350px]  w-full md:w-[35%] max-w-[500px] text-center relative py-8 rounded-md">
-            <button
-              className="border-2 border-brown p-4 w-[80%] rounded-lg  mt-8 bg-brown font-semibold text-white text-center"
-              
-            >
+          <div className="bg-[#18191B]  w-full md:w-[35%] max-w-[500px] text-center relative py-8 rounded-md flex flex-col   gap-4 text-white">
+            <h3 className="font-semibold text-xl text-white">Cart Summary</h3>
+
+            <div className="w-[90%] mx-auto text-gray-200">
+              <p className="flex justify-between items-center">
+                No of rooms <span className="font-bold text-white">{cartItems.length}</span>
+              </p>
+              <p className="flex justify-between items-center ">
+                Total price
+                <span className="font-bold  text-white">{formattedPrice}</span>
+              </p>
+            </div>
+            <button className="border-2 border-brown p-2 w-[90%] rounded-lg   bg-brown font-semibold mx-auto text-white text-center">
               Checkout
             </button>
           </div>
