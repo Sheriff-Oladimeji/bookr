@@ -51,7 +51,7 @@ const Room = () => {
 
   return (
     <div className="mb-20 font-mont">
-      <div className="w-[90%] md:w-[80%] mx-auto  mt-32">
+      <div className="w-[90%] md:w-[80%] mx-auto  mt-32 ">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 w-full">
           {name}
         </h1>
