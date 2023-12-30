@@ -34,7 +34,7 @@ const Cart = () => {
           </Link>
         </div>
       ) : (
-        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 py-8">
+        <div className="w-full flex flex-col md:flex-row  justify-between gap-12 py-8">
           <div className="w-full md:w-[70%]">
             {cartItems.map((item) => (
               <div
