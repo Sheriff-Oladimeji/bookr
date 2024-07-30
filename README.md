@@ -4,7 +4,7 @@ This website is designed to provide users with the ability to book hotel rooms f
 
 ## Demo
 
-https://bookr-room.netlify.app
+https://bookr.pages.dev/
 
 ## Tech Stack
 
