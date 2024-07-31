@@ -9,11 +9,11 @@ const Cart = () => {
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
   const formattedPrice = totalPrice.toLocaleString("en-US", {
-  style: "currency",
-  currency: "USD",
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0,
-});
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (itemId) => {
@@ -25,10 +25,10 @@ const Cart = () => {
       <h1>Cart Page</h1>
       {cartItems.length === 0 ? (
         <div className="py-8 mt-8 text-4xl flex flex-col justify-center gap-8 items-center">
-          <p className=" text-4xl  ">Your cart is empty.</p>
+          <p className=" text-4xl  text-center ">Your cart is empty.</p>
           <Link
             to="/rooms"
-            className="border-2 border-brown p-2  rounded-lg  mt-4 bg-brown text-lg  text-white text-center mb-4  font-lato  "
+            className="border-2 border-brown p-2  px-3 rounded-lg  mt-4 bg-brown text-lg  text-white text-center mb-4  font-lato  "
           >
             Book a Room
           </Link>
@@ -63,7 +63,8 @@ const Cart = () => {
 
             <div className="w-[90%] mx-auto text-gray-200">
               <p className="flex justify-between items-center">
-                No of rooms <span className="font-bold text-white">{cartItems.length}</span>
+                No of rooms{" "}
+                <span className="font-bold text-white">{cartItems.length}</span>
               </p>
               <p className="flex justify-between items-center ">
                 Total price
