@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <header className="header font-lato">
       <div className="flex flex-col justify-center items-center pt-32  w-[90%] mx-auto">
-        <h1 className="text-3xl  sm:text-4xl md:text-5xl mx-auto text-center mt-12 font-mont">
+        <h1 className="text-3xl  sm:text-4xl md:text-5xl mx-auto text-center mt-12 font-lato cursive">
           Welcome To The Place Where Luxury Meets Affordability
         </h1>
         <div className="h-[100px] flex flex-col gap-6 md:flex-row items-center justify-around  mt-[100px] w-full  px-0 py-4 rounded-[5px] relative">
@@ -61,13 +61,15 @@ const Header = () => {
               )}`}
             </span>
             {openDate && (
-              <DateRange
-                editableDateInputs={true}
-                onChange={(item) => setDate([item.selection])}
-                moveRangeOnFirstSelection={false}
-                ranges={date}
-                className="absolute top-[20px] md:top-[80px] left-0 mx-auto z-10 rounded-lg md:left-10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
-              />
+              <div>
+                <DateRange
+                  editableDateInputs={true}
+                  onChange={(item) => setDate([item.selection])}
+                  moveRangeOnFirstSelection={false}
+                  ranges={date}
+                  className="absolute top-[80px]  left-0 mx-auto z-10 rounded-lg md:left-10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
+                />
+              </div>
             )}
           </div>
           <div className="box">
@@ -80,7 +82,7 @@ const Header = () => {
             </span>
             {openGuests && (
               <div
-                className="absolute bg-[white] text-[gray] shadow-[0px_0px_10px_-15px_rgba(0,0,0,0.4)] rounded-[5px] top-[80px] "
+                className="absolute bg-[white] text-[gray] shadow-[0px_0px_10px_-15px_rgba(0,0,0,0.4)] rounded-[5px] top-[160px] md:top-[80px]"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="guestItem">
